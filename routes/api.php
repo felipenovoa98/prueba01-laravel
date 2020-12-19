@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+//Route::resource('reserva', ReservaController::class);
+//para hacer pruebas en possman 
+Route::resource('reserva', ReservaController::class);
+Route::resource('users', UserController::class);

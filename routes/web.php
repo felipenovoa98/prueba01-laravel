@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
+// Route::resource('reserva', ReservaController::class);
+// Route::resource('users', UserController::class);
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
