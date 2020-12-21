@@ -21,3 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //para hacer pruebas en possman 
 Route::resource('reserva', ReservaController::class);
 Route::resource('users', UserController::class);
+Route::post('/login','UserController@login');
+

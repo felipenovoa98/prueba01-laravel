@@ -41,6 +41,23 @@ class UserController extends Controller
         return ['deleted' => true];
     }
 
+    public function login(Request $request)
+    {
+        $user = User::where('email',$request->email)->first();
+
+        if(!isset($user->id)){
+            return response()->json([
+                'error'=> 'Usuario no Registrado'
+            ],401);
+        }
+
+
+        return response()->json([
+            'message'=> 'Usuario Encontrado',
+            'user_id'=> $user->id
+        ],200);
+    }
+
 }
 
 
