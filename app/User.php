@@ -11,7 +11,7 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
-     * The attributes that are mass assignable.
+     * a traves del modelo el controlador puede acceder a los datos
      *
      * @var array
      */

@@ -15,6 +15,8 @@ class TipoMesaSeeder extends Seeder
         DB::table('mesa')->insert([
             'id' => 1,
             'tipoMesa' => 'Mesa Familiar',
+            'nombreMesa' => 'MesaIndividual',
+            'message' => 'message',
             'cantidadSilla' => 4,
             'cantidadMesa'=>20,
             'created_at'=>$now,

@@ -16,9 +16,14 @@ class ReservaSeeder extends Seeder
         $now = Carbon::now();
         DB::table('reserva')->insert([
             'id' => 1,
+            'estado_id' => 1,
             'fechaReserva' => $now,
+            'hora' => $now,
+            'message' => 'esto es un comentario',
             'mesa_id' => 1,
-            'user_id' => 1,
+            'name' => 'rick grimmes',
+           // 'email' => 'rickgrimmes@gmial.com',
+            'phone' => '+156465',
             'created_at' => $now,
             'updated_at'=>$now
         ]);

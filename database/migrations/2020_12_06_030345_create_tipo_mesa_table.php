@@ -18,6 +18,8 @@ class CreateTipoMesaTable extends Migration
             $table->string('tipoMesa');
             $table->integer('cantidadSilla');
             $table->integer('cantidadMesa');
+            $table->String('nombreMesa');
+            $table->String('message');
             $table->timestamps();
 
         });

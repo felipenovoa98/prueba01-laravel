@@ -10,7 +10,13 @@ class Reserva extends Model
     protected $table = 'reserva';
     protected $primaryKey = 'id';
     protected $fillable = [
+        'estado_id',
         'fechaReserva',
+        'name',
+        'phone',
+        'email',
+        'hora',
+        'message',
         'mesa_id',
         'user_id',
     ];

@@ -11,7 +11,7 @@ class UserController extends Controller
     public function index(){
         $user = User::all();
         return UserResource::collection($user);
-
+// cada accion que se hace quedan aqui, depende del uso que tenga la aplicacion
     }
     public function store(Request $request)
     {
