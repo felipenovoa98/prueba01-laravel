@@ -12,10 +12,10 @@ class ReservaSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('reserva')->truncate();
         // biblioteca maneja fechas con variable now
         $now = Carbon::now();
         DB::table('reserva')->insert([
-            'id' => 1,
             'estado_id' => 1,
             'fechaReserva' => $now,
             'hora' => $now,
